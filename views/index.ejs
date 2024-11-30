@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+    <h1>Escolha uma operação</h1>
+    <form action="/calculate" method="POST">
+        <label for="num1">Número 1:</label>
+        <input type="number" step="any" name="num1" id="num1" required>
+        <br>
+        <label for="num2">Número 2:</label>
+        <input type="number" step="any" name="num2" id="num2" required>
+        <br>
+        <label for="operation">Operação:</label>
+        <select name="operation" id="operation">
+            <option value="add">Adição</option>
+            <option value="subtract">Subtração</option>
+            <option value="multiply">Multiplicação</option>
+            <option value="divide">Divisão</option>
+            <option value="modulus">Módulo</option>
+        </select>
+        <br><br>
+        <button type="submit">Calcular</button>
+    </form>
+</body>
+</html>
